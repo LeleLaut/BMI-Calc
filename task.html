@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UACompatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Kalkulator BMI</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar purus id eros tincidunt hendrerit. Nullam facilisis ante sit amet mi faucibus ultrices. Phasellus bibendum, lorem sed luctus aliquam, mi velit mollis risus, sed eleifend diam nibh eu tellus. Aliquam viverra sapien vel nunc malesuada, sit amet suscipit velit interdum. Sed finibus, metus quis consequat vulputate, turpis massa fringilla velit, quis viverra lorem nulla id neque.</p>
+  <div class="card">
+    <div class="form-group">
+        <strong>Jenis Kelamin</strong>
+        <div>
+        <input type="radio" name="jenisKelamin" value="1" required="true">
+        <label for="jenisKelamin">Laki-Laki</label>
+        <input type="radio" name="jenisKelamin" value="0" required="true">
+        <label for="jenisKelamin">Perempuan</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="BB">Berat Badan (kg)</label>
+
+        <i class="fa-solid fa-pencil icon" ></i>
+        <input name="BB" type="text" required="true" placeholder="Masukkan Berat Badan">
+
+        <label for="TB">Tinggi Badan (cm)</label>
+        <div>
+        <i class="fa-solid fa-pencil"style="width:auto"></i>
+        <input name="TB" type="text" required="true" placeholder="Masukkan Tinggi Badan">
+        </div>
+    </div>
+    <input type="button" value="Hitung">
+    <input type="button" value="Reset">
+  </div>
+</body>
+</html>
