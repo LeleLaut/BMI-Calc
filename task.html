@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UACompatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalkulator BMI</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="script.js"></script>
 </head>
+
 <body>
-  <h1>Kalkulator BMI</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar purus id eros tincidunt hendrerit. Nullam facilisis ante sit amet mi faucibus ultrices. Phasellus bibendum, lorem sed luctus aliquam, mi velit mollis risus, sed eleifend diam nibh eu tellus. Aliquam viverra sapien vel nunc malesuada, sit amet suscipit velit interdum. Sed finibus, metus quis consequat vulputate, turpis massa fringilla velit, quis viverra lorem nulla id neque.</p>
-  <div class="card">
-    <div class="form-group">
-        <strong>Jenis Kelamin</strong>
-        <div>
-        <input type="radio" name="jenisKelamin" value="1" required="true">
-        <label for="jenisKelamin">Laki-Laki</label>
-        <input type="radio" name="jenisKelamin" value="0" required="true">
-        <label for="jenisKelamin">Perempuan</label>
-        </div>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h1>Kalkulator BMI</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar purus id eros tincidunt hendrerit.
+        Nullam
+        facilisis ante sit amet mi faucibus ultrices. Phasellus bibendum, lorem sed luctus aliquam, mi velit mollis
+        risus,
+        sed eleifend diam nibh eu tellus. Aliquam viverra sapien vel nunc malesuada, sit amet suscipit velit interdum.
+        Sed
+        finibus, metus quis consequat vulputate, turpis massa fringilla velit, quis viverra lorem nulla id neque.</p>
+      <div class="card">
+        <form id="form">
+          <div class="form-group">
+            <strong>Jenis Kelamin</strong>
+            <div>
+              <input type="radio" name="jenisKelamin" id="L" required="true">
+              <label for="jenisKelamin">Laki-Laki</label>
+              <input type="radio" name="jenisKelamin" id="P" required="true">
+              <label for="jenisKelamin">Perempuan</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="BB">Berat Badan (kg)</label>
+            <div>
+              <i class="fa-solid fa-pencil icon" style="width:auto"></i>
+              <input id="BB" type="number" size="80" required="true" placeholder="Masukkan Berat Badan">
+            </div>
+            <label for="BB">Usia</label>
+            <div>
+              <i class="fa-solid fa-pencil icon" style="width:auto"></i>
+              <input id="Age" type="number" required="true" placeholder="Masukkan Usia anda">
+            </div>
+            <label for="TB">Tinggi Badan (cm)</label>
+            <div>
+              <i class="fa-solid fa-pencil" style="width:auto"></i>
+              <input id="TB" type="number" required="true" placeholder="Masukkan Tinggi Badan">
+            </div>
+          </div>
+          <div class="buttona">
+            <button class="calculate" id="submit" onclick="hitung();">Hitung!</button>
+            <button class="button" id="Reset">Reset</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="form-group">
-        <label for="BB">Berat Badan (kg)</label>
-
-        <i class="fa-solid fa-pencil icon" ></i>
-        <input name="BB" type="text" required="true" placeholder="Masukkan Berat Badan">
-
-        <label for="TB">Tinggi Badan (cm)</label>
-        <div>
-        <i class="fa-solid fa-pencil"style="width:auto"></i>
-        <input name="TB" type="text" required="true" placeholder="Masukkan Tinggi Badan">
+    <div class="flex-item">
+      <div class="card2">
+        <h2>Hasil</h2>
+        <div id="hasil">
+          <p class="comm1"></p>
+        </br>
+        <div id="Answe">00.00</div>
+        </br>
+        <p class="comm2"></p>
         </div>
+      </br>
+      </div>
     </div>
-    <input type="button" value="Hitung">
-    <input type="button" value="Reset">
   </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
