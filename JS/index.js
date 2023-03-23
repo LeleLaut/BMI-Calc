@@ -1,6 +1,5 @@
 // declare the variable
 var form = document.querySelector('.form');
-
 var heightInput = form.querySelector("#height");
 var weightInput = form.querySelector("#weight");
 var ageInput = form.querySelector("#age");
@@ -9,8 +8,10 @@ var bmiValue = document.getElementById("result-BMI");
 var category = document.getElementById("result-Category");
 var statement = document.getElementById("result-statement");
 
+
 form.addEventListener("submit", function(event){
     event.preventDefault();
+    // check the age value
     if (ageInput.value < 18){
         alert ("Usia Harus Di atas 18 Tahun");
     } 
