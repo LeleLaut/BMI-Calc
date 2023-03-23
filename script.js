@@ -22,7 +22,25 @@ function hitung(){
 
 function hitungBMI(BB,TB){
     var bmi = BB / (TB * TB);
-    return bmi;
+    
+    var bmiResult = ''
+    if (bmi<18.5){
+        result = 'Underweight';
+    }
+    else if (18.5 < bmi < 24.9)
+    {
+        result = 'Healthy';
+    }
+    else if (25 < bmi < 29.9){
+        result = 'Overweight';
+    }
+
+    else if (30 < bmi < 34.9){
+        result = 'Obese';
+    }
+    else{
+        result = 'Extremely Obese';
+    }
 }
 
 
