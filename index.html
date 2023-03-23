@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UACompatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="center">Kalkulator BMI</h1>
+        <p class="justify"> Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang
+            menunjang
+            penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk,
+            hitung sekarang di kalkulator BMI.</p>
+    </header>
+
+    <section id="calculator">
+        <div class="card">
+            <form id="form-bmi" class="form">
+                <div class="form-group-gender">
+                    <strong>Jenis Kelamin</strong>
+                    <br>
+                    <input type="radio" name="gender" value="m" required="true">
+                    <label for="gender">Laki-Laki</label>
+                    <input type="radio" name="gender" value="f" required="true">
+                    <label for="gender">Perempuan</label>
+                </div>
+                <div class="form-group-input">
+                    <label for="age">Usia :</label>
+                    <div class="icon-input">
+                        <input id="age" type="number" required="true">
+                    </div>
+                </div>
+                <div class="form-group-input">
+                    <label for="weight">Berat Badan (kg) :</label>
+                    <div class="icon-input">
+                        <input id="weight" type="number" required="true">
+                    </div>
+                </div>
+                <div class="form-group-input">
+                    <label for="height">Tinggi Badan (cm) :</label>
+                    <div class="icon-input">
+                        <input id="height" type="number" required="true">
+                    </div>
+                </div>
+                <div class="button">
+                    <button id="calculate" type="submit" class="button">Hitung!</button>
+                    <button id="reset" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="result">
+        <div class="result-card">
+            <h1>Hasil Hitung BMI</h1>
+            <h2 id="result-BMI">00.00</h2>
+            <h4 id="result-Category">Kategori BMI</h2>
+            <p id="result-statement"></p>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+<script src="/JS/index.js"></script>
+
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* For mobile phones: */
+@media only screen and (max-width: 767px) {
+  body {
+    width: 90%;
+  }
+}
+
+body{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: rgb(32,42,68);
+    margin: auto;
+}
+
+/* card for calculate */
+.card{
+  border: 0px solid;
+  border-radius: 7px;
+  background-color: lightskyblue;
+  padding: 2em;
+  /* text-align: center; */
+  margin-bottom: 10px;
+  
+}
+/* card for result */
+.result-card{
+  border: 0px solid;
+  border-radius: 7px;
+  background-color: lightskyblue;
+  padding: 2em;
+  text-align: center;
+
+}
+.form-group-input{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.form-group-gender{
+    margin-bottom: 10px;
+}
+
+label{
+    font-weight: bold;
+    
+}
+
+input{
+  margin: 5px;
+  border: 3px solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: white;
+  padding-top: 5px;
+  flex-grow: 1;
+}
+
+.icon-input {
+  display: flex;
+  align-items: center;
+} 
+
+/* .icon-input icon {
+  margin: 7px;
+} */
+
+button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .icon{
+    width: 1%;
+  }
+
+  .justify{
+      text-align: justify;
+  }
+  .center{
+    text-align: center;
+  }
+  
+
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  body {
+      width: 700px;
+  }
+}
