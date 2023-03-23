@@ -21,7 +21,7 @@ form.addEventListener("submit", function(event){
 });
 
 function calculate(){
-    // insert the value to variable, convert the height to Meter
+    // insert the value to variable, convert the height to Meters
     let weight = weightInput.value;
     let height = heightInput.value/100;
 
